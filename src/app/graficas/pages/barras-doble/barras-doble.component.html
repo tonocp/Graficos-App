@@ -1,0 +1,18 @@
+<h1>Gráficos de Barras</h1>
+<hr />
+<div class="row">
+  <div class="col-md-6">
+    <app-grafico-barra
+      [horizontal]="true"
+      [barChartData]="productoData"
+      [barChartLabels]="proveedoresLabels"
+    ></app-grafico-barra>
+  </div>
+  <div class="col-md-6">
+    <app-grafico-barra
+      [horizontal]="false"
+      [barChartData]="proveedoresData"
+      [barChartLabels]="proveedoresLabels"
+    ></app-grafico-barra>
+  </div>
+</div>
