@@ -1,1 +1,26 @@
-<p>rosco-http works!</p>
+<h1>RRSS más usadas</h1>
+<hr />
+<div
+  *ngIf="doughnutChartData.length === 0; else divGrafico"
+  class="alert alert-info"
+>
+  Cargando Datos...
+</div>
+<div class="row">
+  <div class="col">
+    <ng-template #divGrafico>
+      <div style="display: block">
+        <canvas
+          baseChart
+          [data]="doughnutChartData"
+          [labels]="doughnutChartLabels"
+          [chartType]="doughnutChartType"
+        >
+        </canvas>
+      </div>
+      <span class="float-end text-primary"
+        >Información en billones de usuarios</span
+      >
+    </ng-template>
+  </div>
+</div>
