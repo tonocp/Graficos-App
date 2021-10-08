@@ -34,15 +34,16 @@ export class BarrasComponent implements OnInit {
   ngOnInit(): void {}
 
   public randomize(): void {
-    // Only Change 3 values
-    this.barChartData[0].data = [
-      Math.round(Math.random() * 100),
-      59,
-      80,
-      Math.random() * 100,
-      56,
-      Math.random() * 100,
-      40,
-    ];
+    this.barChartData.forEach((element) => {
+      element.data = [
+        Math.round(Math.random() * 100),
+        Math.random() * 100,
+        Math.random() * 100,
+        Math.random() * 100,
+        Math.random() * 100,
+        Math.random() * 100,
+        Math.random() * 100,
+      ];
+    });
   }
 }
