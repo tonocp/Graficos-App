@@ -1,0 +1,46 @@
+:root {
+  --gp-bg: #f4f5fb;
+  --gp-surface: #ffffff;
+  --gp-text: #1f2333;
+  --gp-muted: #6b7280;
+  --gp-primary: #4f46e5;
+  --gp-primary-dark: #3730a3;
+  --gp-border: #e5e7eb;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--gp-bg);
+  color: var(--gp-text);
+  font-family:
+    'Segoe UI',
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.list-group-item.active {
+  background-color: var(--gp-primary);
+  border-color: var(--gp-primary);
+}
+
+.btn-primary {
+  background-color: var(--gp-primary);
+  border-color: var(--gp-primary);
+
+  &:hover,
+  &:focus {
+    background-color: var(--gp-primary-dark);
+    border-color: var(--gp-primary-dark);
+  }
+}
+
+.card {
+  border-color: var(--gp-border);
+  border-radius: 0.75rem;
+}

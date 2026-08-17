@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://graficas-tcp.herokuapp.com/grafica',
+  baseUrl: 'https://simple-mean-backend.onrender.com',
 };
