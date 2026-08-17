@@ -1,0 +1,16 @@
+<nav class="menu-card">
+  <h1 class="menu-title">Gráficas</h1>
+  <ul class="list-group">
+    @for (item of menu; track item.ruta) {
+      <li class="list-group-item">
+        <a
+          [routerLink]="['/graficas', item.ruta]"
+          routerLinkActive="active"
+          class="menu-link"
+        >
+          {{ item.texto }}
+        </a>
+      </li>
+    }
+  </ul>
+</nav>

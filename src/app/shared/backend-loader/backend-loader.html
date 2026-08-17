@@ -1,0 +1,14 @@
+@if (cargando) {
+  <div class="backend-loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Cargando…</span>
+    </div>
+    <p>{{ mensajeCarga }}</p>
+  </div>
+}
+
+@if (error) {
+  <div class="backend-loader backend-loader--error">
+    <p>{{ mensajeError }}</p>
+  </div>
+}
