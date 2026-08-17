@@ -17,6 +17,6 @@ export class Menu {
     { ruta: 'barras', texto: 'Barras' },
     { ruta: 'barras-doble', texto: 'Barras dobles' },
     { ruta: 'rosco', texto: 'Rosco' },
-    { ruta: 'rosco-http', texto: 'Rosco (HTTP)' },
+    { ruta: 'rosco-http', texto: 'Rosco (datos en vivo)' },
   ];
 }

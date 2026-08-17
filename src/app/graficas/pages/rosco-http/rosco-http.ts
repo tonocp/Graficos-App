@@ -3,10 +3,11 @@ import { ChartData } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 
 import { GraficasService } from '../../services/graficas.service';
+import { BackendLoader } from '../../../shared/backend-loader/backend-loader';
 
 @Component({
   selector: 'app-rosco-http',
-  imports: [BaseChartDirective],
+  imports: [BaseChartDirective, BackendLoader],
   templateUrl: './rosco-http.html',
 })
 export class RoscoHttp {

@@ -1,0 +1,14 @@
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-backend-loader',
+  templateUrl: './backend-loader.html',
+  styleUrl: './backend-loader.scss',
+})
+export class BackendLoader {
+  @Input() cargando = false;
+  @Input() error = false;
+  @Input() mensajeCarga = 'Cargando...';
+  @Input() mensajeError =
+    'No se han podido cargar los datos. El backend gratuito puede tardar unos segundos en despertar tras estar inactivo — prueba de nuevo en unos segundos.';
+}

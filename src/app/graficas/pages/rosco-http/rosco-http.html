@@ -1,14 +1,13 @@
 <div class="card p-3" style="max-width: 420px">
   <h2 class="h6 mb-3">Seguidores por red social</h2>
 
-  @if (cargando()) {
-    <p class="text-muted">Cargando datos...</p>
-  } @else if (error()) {
-    <p class="text-danger">
-      No se han podido cargar los datos. El backend gratuito puede tardar unos segundos en
-      despertar tras estar inactivo — prueba a recargar en unos segundos.
-    </p>
-  } @else {
+  <app-backend-loader
+    [cargando]="cargando()"
+    [error]="error()"
+    mensajeCarga="Cargando datos..."
+  ></app-backend-loader>
+
+  @if (!cargando() && !error()) {
     <canvas baseChart type="doughnut" [data]="data()"></canvas>
   }
 </div>
